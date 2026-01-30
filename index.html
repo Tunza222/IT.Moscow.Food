@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
+<script src="groups.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <title>Обеды</title>
@@ -25,7 +27,7 @@
 
             <!-- Текущая страница -->
             <span class="nav-link active">Обеды</span>
-            <a href="👤" class="nav-link profile-btn">🚪Личный кабинет</a>
+            <a href="https://it-moscow.pro/" class="nav-link profile-btn">🚪Личный кабинет</a>
 
         </nav>
     </div>
@@ -50,39 +52,20 @@
             <h1>Понедельник</h1>
 
             <div class="lunch-info">
-                <span class="lunch-time">Время обеда</span>
-                <span class="free">Бесплатно</span>
+                <span class="lunch-time" id="lunchTime">—</span>
+                <span class="status" id="lunchStatus">—</span>
+
             </div>
         </div>
 
         <div class="menu-grid">
             <!-- Левая колонка -->
-            <div class="column">
-                <div class="card">
-                    <h4>Основное блюдо</h4>
-                    <div class="item">Бургер <span>5.0 ⭐</span></div>
-                    <div class="item">Макарошки <span>5.0 ⭐</span></div>
-                </div>
+            <input class="search" type="text" placeholder="Поиск" id="groupSearch">
 
-                <div class="card">
-                    <h4>Салаты</h4>
-                    <div class="item">Салат с огурцами <span>5.0 ⭐</span></div>
-                    <div class="item">Винегрет <span>5.0 ⭐</span></div>
-                </div>
-
-                <div class="card">
-                    <h4>Напитки</h4>
-                    <div class="item">Чай <span>5.0 ⭐</span></div>
-                    <div class="item">Какао <span>5.0 ⭐</span></div>
-                    <div class="item">Сок <span>5.0 ⭐</span></div>
-                </div>
-
-                <div class="card">
-                    <h4>Фрукты</h4>
-                    <div class="item">Яблоки <span>5.0 ⭐</span></div>
-                    <div class="item">Груши <span>5.0 ⭐</span></div>
-                </div>
+            <div class="groups-list" id="groupsList">
+                <!-- Группы будут добавляться сюда через JS -->
             </div>
+
 
             <!-- Правая колонка -->
             <div class="column">

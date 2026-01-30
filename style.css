@@ -183,3 +183,37 @@ body {
     color: #555;
 }
 
+.status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.status.free {
+    background: #e9ffd9;
+    color: #3fae2a;
+}
+
+.status.paid {
+    background: #ffe0e0;
+    color: #d93030;
+}
+
+/* группы в сайдбаре */
+.groups-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group-item {
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.group-item:hover {
+    background: #f0f4ff;
+}
+
